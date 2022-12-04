@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import svgloader from 'vite-svg-loader'
+
 export default defineNuxtConfig({
 	modules: [
 		[
@@ -9,6 +11,9 @@ export default defineNuxtConfig({
 		],
 		['@nuxtjs/tailwindcss']
 	],
+	vite: {
+		plugins: [svgloader()]
+	},
 	typescript: {
 		typeCheck: true
 	}
