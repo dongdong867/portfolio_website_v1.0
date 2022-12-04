@@ -6,7 +6,8 @@ export default defineNuxtConfig({
 			{
 				autoImports: ['defineStore']
 			}
-		]
+		],
+		['@nuxtjs/tailwindcss']
 	],
 	typescript: {
 		typeCheck: true
