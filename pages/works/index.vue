@@ -1,7 +1,15 @@
 <template>
-	<div></div>
+	<div class="w-full h-full flex flex-col gap-y-5">
+		<WorksOpenNCCU />
+		<WorksLetsBeatGoogle />
+		<WorksNCCUJobBank />
+		<WorksTranslatorIntroduction />
+		<WorksScoreCalculator />
+	</div>
 </template>
 
-<script>
-export default {}
+<script setup>
+definePageMeta({
+	layout: 'works-index'
+})
 </script>
