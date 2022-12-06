@@ -5,8 +5,10 @@
 	body,
 	#__nuxt {
 		width: 100%;
-		height: 100%;
+		height: max-content;
 		margin: 0;
+		scroll-behavior: smooth;
+		scrollbar-width: none;
 	}
 
 	:root {
@@ -20,24 +22,30 @@
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('~/assets/fonts/Montserrat/Montserrat-Medium');
+	src: url('~/assets/fonts/Montserrat/Montserrat-Medium.ttf');
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('~/assets/fonts/Montserrat-SemiBold');
+	src: url('~/assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('~/assets/fonts/Montserrat/Montserrat-Bold');
+	src: url('~/assets/fonts/Montserrat/Montserrat-Bold.ttf');
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('~/assets/fonts/Montserrat/Montserrat-ExtraBold');
+	src: url('~/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf');
 	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('~/assets/fonts/Montserrat/Montserrat-Black.ttf');
+	font-weight: 900;
 }

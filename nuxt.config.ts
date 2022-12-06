@@ -11,6 +11,14 @@ export default defineNuxtConfig({
 		],
 		['@nuxtjs/tailwindcss']
 	],
+
+	plugins: [
+		{
+			src: '@/plugins/aos',
+			ssr: false,
+			mode: 'client'
+		}
+	],
 	vite: {
 		plugins: [svgloader()]
 	},
