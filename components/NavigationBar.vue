@@ -1,18 +1,21 @@
 <template>
 	<div
-		class="w-[80%] h-[4vh] flex m-auto place-content-between place-items-start font-bold text-xl"
+		class="w-[80vw] h-[4vh] flex m-auto place-content-between place-items-center font-bold text-xl"
 	>
-		<div>DONG</div>
+		<div>
+			DONG
+			<div class="hover-transition bg-base"></div>
+		</div>
 		<div class="w-max flex gap-x-10">
-			<nuxt-link to="../" class="group basis-1/3">
+			<nuxt-link to="/" class="group basis-1/3">
 				HOME
 				<div class="hover-transition" />
 			</nuxt-link>
-			<nuxt-link to="../about" class="group basis-1/3">
+			<nuxt-link to="/about" class="group basis-1/3">
 				ABOUT
 				<div class="hover-transition" />
 			</nuxt-link>
-			<nuxt-link to="../works" class="group basis-1/3">
+			<nuxt-link to="/works" class="group basis-1/3">
 				WORKS
 				<div class="hover-transition" />
 			</nuxt-link>

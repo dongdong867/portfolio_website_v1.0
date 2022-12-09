@@ -1,7 +1,7 @@
 <template>
-	<div class="w-full mt-[2vh]">
-		<div class="w-screen h-1 relative bottom-[5%] left-0 bg-base-content z-10" />
-		<div class="w-[90%] flex justify-end gap-x-3 mt-3 mb-3">
+	<div class="w-screen">
+		<div class="h-1 relative bottom-[0.5vh] left-0 bg-base-content z-10" />
+		<div class="w-[90vw] mt-[1vh] flex place-content-end gap-x-[0.5vw]">
 			<a href="mailto: dongdong0867@gmail.com" target="_blank">
 				<img :src="MailIcon" />
 			</a>
