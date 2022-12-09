@@ -1,14 +1,18 @@
 <template>
-	<div class="w-full h-full bg-base sticky top-0 pt-10 z-10">
+	<div class="w-screen h-[8vh] bg-base sticky top-0 flex place-items-center z-10">
 		<NavigationBar />
 	</div>
 
-	<div class="w-full h-[90vh] flex flex-col m-auto mb-3 antialiased">
-		<div class="grow m-auto mt-10">
-			<NuxtPage />
-		</div>
-		<Footer />
+	<div
+		class="w-1 absolute top-0 right-[4vw] bg-base-content animate-[upper-line-down_1s_ease-in-out_forwards] z-20"
+	/>
+	<div
+		class="h-1 absolute top-[8vh] right-0 bg-base-content animate-[line-to-left_1s_ease-in-out_forwards]"
+	/>
+	<div class="w-[100vw] h-[87vh] flex antialiased">
+		<NuxtPage class="m-auto" />
 	</div>
+	<Footer />
 </template>
 
 <script setup></script>
