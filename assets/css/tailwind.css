@@ -18,7 +18,33 @@
 
 @tailwind components;
 
+@layer components {
+	@keyframes link-hover-bounce {
+		0%,
+		100% {
+			transform: translateX(-25%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: translateX(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
+}
+
 @tailwind utilities;
+
+@layer utilities {
+	.gradient-background {
+		background-image: linear-gradient(90.73deg, #2af598 0%, #009efd 100%);
+	}
+
+	.gradient-text {
+		color: transparent;
+		background-clip: text;
+		background-image: linear-gradient(90.73deg, #2af598 0%, #009efd 100%);
+	}
+}
 
 @font-face {
 	font-family: 'Montserrat';
