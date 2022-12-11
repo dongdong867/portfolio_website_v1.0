@@ -1,15 +1,14 @@
 <template>
-	<div
-		class="w-screen h-[87vh] bg-scroll bg-no-repeat bg-[length:100vw_auto] overflow-y-auto overflow-x-hidden select-none cursor-default snap-y snap-mandatory scroll-pb-[5vh] scroll-pt-[8vh]"
-		:style="{ 'background-image': 'url(' + NCCUJobBankView + ')' }"
-	>
-		<div class="w-screen flex flex-col text-3xl font-bold">
+	<div class="work-basic" :style="{ 'background-image': 'url(' + NCCUJobBankView + ')' }">
+		<div class="w-screen flex flex-col text-2xl font-bold">
 			<NccuJobBankTitle />
-			<div class="w-screen h-full mt-[22vh] bg-base text-2xl">
-				<NccuJobBankOverview />
-				<NccuJobBankBackground />
-				<NccuJobBankObjective />
-				<NccuJobBankProblems />
+			<div class="mt-[22vh] bg-base">
+				<NccuJobBankOverview class="w-[80vw] m-auto" />
+				<div class="w-[70vw] m-auto">
+					<NccuJobBankBackground />
+					<NccuJobBankObjective />
+					<NccuJobBankProblems />
+				</div>
 				<NccuJobBankShowcase />
 			</div>
 		</div>

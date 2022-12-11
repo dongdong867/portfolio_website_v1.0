@@ -1,15 +1,14 @@
 <template>
-	<div
-		class="w-screen h-[87vh] bg-scroll bg-no-repeat bg-[length:100vw_auto] overflow-y-auto overflow-x-hidden select-none cursor-default snap-y snap-mandatory scroll-pb-[5vh] scroll-pt-[5vh]"
-		:style="{ 'background-image': 'url(' + Title + ')' }"
-	>
-		<div class="w-screen flex flex-col text-3xl font-bold">
+	<div class="work-basic" :style="{ 'background-image': 'url(' + Title + ')' }">
+		<div class="w-screen flex flex-col text-2xl font-bold">
 			<ScoreCalculatorTitle />
-			<div class="w-screen h-full mt-[22vh] bg-base text-2xl">
-				<ScoreCalculatorOverview />
-				<ScoreCalculatorBackground />
-				<ScoreCalculatorObjective />
-				<ScoreCalculatorProblems />
+			<div class="mt-[22vh] bg-base">
+				<ScoreCalculatorOverview class="w-[80vw] m-auto" />
+				<div class="w-[70vw] m-auto">
+					<ScoreCalculatorBackground />
+					<ScoreCalculatorObjective />
+					<ScoreCalculatorProblems />
+				</div>
 				<ScoreCalculatorShowcase />
 			</div>
 		</div>
