@@ -10,8 +10,8 @@
 			:style="{ 'background-image': 'url(' + ScoreCalculator + ')' }"
 		>
 			<div class="work-index-label">
-				<div class="text-5xl gradient-text">Translator Introduction</div>
-				<div class="mt-[2vh]">Webframe Developer</div>
+				<div class="text-5xl gradient-text">Score Calculator</div>
+				<div class="mt-[2vh]">Java Developer</div>
 				<div>2021</div>
 			</div>
 		</div>
