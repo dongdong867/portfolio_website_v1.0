@@ -95,6 +95,15 @@
 			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 		}
 	}
+
+	@keyframes line-to-left-in-work {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 91%;
+		}
+	}
 }
 
 @layer components {

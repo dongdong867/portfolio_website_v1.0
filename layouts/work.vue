@@ -13,13 +13,4 @@
 
 <script setup></script>
 
-<style lang="scss">
-@keyframes line-to-left-in-work {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: 91%;
-	}
-}
-</style>
+<style lang="scss"></style>
