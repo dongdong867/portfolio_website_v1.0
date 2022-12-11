@@ -98,6 +98,15 @@
 }
 
 @layer components {
+	.work-index-basic {
+		place-items: flex-end;
+		@apply w-[90vw] h-[77vh] m-auto flex bg-no-repeat bg-center rounded-[30px] cursor-default;
+	}
+
+	.work-index-label {
+		@apply w-max p-[2vw] rounded-bl-[30px] rounded-tr-[30px] font-bold text-2xl bg-base-100;
+	}
+
 	.work-basic {
 		@apply w-screen h-[87vh] cursor-setting work-background work-snap scroll-py-[5vh];
 	}

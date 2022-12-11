@@ -1,20 +1,27 @@
 <template>
-	<div class="w-full h-max">
-		<div class="w-max m-auto gap-x-10 flex">
-			<div class="flex flex-col place-content-center place-items-end">
-				<div class="text-5xl font-bold">Score Calculator</div>
-				<div class="text-2xl mt-5">Developer</div>
-				<div class="text-xl">2021</div>
-			</div>
-			<div class="h-[250px] px-5 pt-4 bg-base-100 rounded-[30px]">
-				<img :src="ScoreCalculatorView" class="h-[230px]" />
+	<div
+		class="w-max h-max p-1 m-auto rounded-[30px]"
+		:class="{ 'gradient-background': isHovering }"
+		@mouseenter="isHovering = true"
+		@mouseleave="isHovering = false"
+	>
+		<div
+			class="work-index-basic bg-[95vw_auto]"
+			:style="{ 'background-image': 'url(' + ScoreCalculator + ')' }"
+		>
+			<div class="work-index-label">
+				<div class="text-5xl gradient-text">Translator Introduction</div>
+				<div class="mt-[2vh]">Webframe Developer</div>
+				<div>2021</div>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
-import ScoreCalculatorView from '~/assets/images/score-calculator.png?url'
+import ScoreCalculator from '~/assets/images/score-calculator.png?url'
+
+const isHovering = ref(false)
 </script>
 
 <style lang="scss" scoped></style>

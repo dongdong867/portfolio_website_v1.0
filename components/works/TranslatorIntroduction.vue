@@ -1,20 +1,27 @@
 <template>
-	<div class="w-full h-max">
-		<div class="w-max m-auto flex gap-x-10">
-			<div class="h-[250px] px-5 pt-3 bg-base-100 rounded-[30px]">
-				<img :src="TranslatorIntroductionView" class="h-[230px]" />
-			</div>
-			<div class="flex flex-col place-content-center">
-				<div class="text-5xl font-bold">Translator Introduction</div>
-				<div class="text-2xl mt-5">Webframe Developer</div>
-				<div class="text-xl">2021</div>
+	<div
+		class="w-max h-max p-1 m-auto rounded-[30px]"
+		:class="{ 'gradient-background': isHovering }"
+		@mouseenter="isHovering = true"
+		@mouseleave="isHovering = false"
+	>
+		<div
+			class="work-index-basic bg-[90vw_auto]"
+			:style="{ 'background-image': 'url(' + TranslatorIntroduction + ')' }"
+		>
+			<div class="work-index-label">
+				<div class="text-5xl gradient-text">Translator Introduction</div>
+				<div class="mt-[2vh]">Webframe Developer</div>
+				<div>2021</div>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
-import TranslatorIntroductionView from '~/assets/images/translator-introduction.png?url'
+import TranslatorIntroduction from '~/assets/images/translator-introduction.png?url'
+
+const isHovering = ref(false)
 </script>
 
 <style lang="scss" scoped></style>
