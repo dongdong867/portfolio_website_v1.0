@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full h-full flex flex-col gap-y-5">
+	<div class="w-screen h-full flex flex-col gap-y-[10vh]">
 		<WorksOpenNCCU />
 		<WorksLetsBeatGoogle />
 		<WorksNCCUJobBank />
