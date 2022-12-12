@@ -1,7 +1,7 @@
 <template>
 	<div class="pt-[5vh] snap-end snap-always">
 		<div class="w-[50vw]">
-			A webframe that introduce the basic of proverb analysis an four translators.
+			A webpage that introduce the basic of proverb analysis an four translators.
 		</div>
 		<div
 			class="work-button"
