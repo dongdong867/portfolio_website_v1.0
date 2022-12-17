@@ -1,9 +1,18 @@
 <template>
 	<div class="mt-[50vh] snap-end snap-always">
-		<div class="w-max m-auto my-[5vh] text-5xl">showcase building</div>
+		<div>
+			<TranslatorIntroductionShowcaseHomepage />
+			<TranslatorIntroductionShowcaseOverview />
+			<TranslatorIntroduction />
+			<TranslatorIntroductionShowcasePoster />
+		</div>
 	</div>
 </template>
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style>
+.img-size {
+	@apply h-[60vh] m-auto;
+}
+</style>
