@@ -1,5 +1,5 @@
 <template>
-	<div class="work-basic" :style="{ 'background-image': 'url(' + a + ')' }">
+	<div class="work-basic" :style="{ 'background-image': 'url(' + title + ')' }">
 		<div class="w-screen flex flex-col text-2xl font-bold">
 			<TranslatorIntroductionTitle />
 			<div class="mt-[22vh] bg-base">
@@ -16,6 +16,8 @@
 </template>
 
 <script setup>
+import title from '~/assets/images/translator-introduction/title.png?url'
+
 definePageMeta({
 	layout: 'work'
 })
