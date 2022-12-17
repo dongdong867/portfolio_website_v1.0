@@ -109,7 +109,7 @@
 @layer components {
 	.work-index-basic {
 		place-items: flex-end;
-		@apply w-[90vw] h-[77vh] m-auto flex bg-no-repeat bg-center rounded-[30px] cursor-default;
+		@apply w-[90vw] h-[77vh] m-auto flex bg-no-repeat bg-center bg-cover rounded-[30px] cursor-default;
 	}
 
 	.work-index-label {

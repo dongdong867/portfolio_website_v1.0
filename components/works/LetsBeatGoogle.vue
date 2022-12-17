@@ -6,10 +6,7 @@
 		@mouseleave="isHovering = false"
 	>
 		<div class="bg-[#bababa] rounded-[30px]">
-			<div
-				class="work-index-basic bg-[auto_77vh]"
-				:style="{ 'background-image': 'url(' + OnWorkingIcon + ')' }"
-			>
+			<div class="bg-contain work-index-basic" :style="{ 'background-image': 'url(' + icon + ')' }">
 				<div class="work-index-label">
 					<div class="text-5xl gradient-text">Let's Beat Google</div>
 					<div class="mt-[2vh]">Full Stack Developer, UI/UX Designer</div>
@@ -21,7 +18,7 @@
 </template>
 
 <script setup>
-import OnWorkingIcon from '~/assets/icons/works/on-working.svg?url'
+import icon from '~/assets/icons/lets-beat-google/icon.svg?url'
 
 const isHovering = ref(false)
 </script>

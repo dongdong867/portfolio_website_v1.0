@@ -6,7 +6,7 @@
 		@mouseleave="isHovering = false"
 	>
 		<div
-			class="work-index-basic bg-[90vw_auto]"
+			class="work-index-basic"
 			:style="{ 'background-image': 'url(' + TranslatorIntroduction + ')' }"
 		>
 			<div class="work-index-label">

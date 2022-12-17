@@ -5,10 +5,7 @@
 		@mouseenter="isHovering = true"
 		@mouseleave="isHovering = false"
 	>
-		<div
-			class="work-index-basic bg-[90vw_auto]"
-			:style="{ 'background-image': 'url(' + OpenNCCUPreview + ')' }"
-		>
+		<div class="work-index-basic" :style="{ 'background-image': 'url(' + OpenNCCUPreview + ')' }">
 			<div class="work-index-label">
 				<div class="text-5xl gradient-text">Open NCCU</div>
 				<div class="mt-[2vh]">Frontend Developer</div>

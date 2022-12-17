@@ -5,10 +5,7 @@
 		@mouseenter="isHovering = true"
 		@mouseleave="isHovering = false"
 	>
-		<div
-			class="work-index-basic bg-[95vw_auto]"
-			:style="{ 'background-image': 'url(' + ScoreCalculator + ')' }"
-		>
+		<div class="work-index-basic" :style="{ 'background-image': 'url(' + ScoreCalculator + ')' }">
 			<div class="work-index-label">
 				<div class="text-5xl gradient-text">Score Calculator</div>
 				<div class="mt-[2vh]">Java Developer</div>
