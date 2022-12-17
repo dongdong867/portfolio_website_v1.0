@@ -24,5 +24,8 @@ export default defineNuxtConfig({
 	},
 	typescript: {
 		typeCheck: true
+	},
+	nitro: {
+		preset: 'firebase'
 	}
 })
