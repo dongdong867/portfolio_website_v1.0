@@ -1,11 +1,10 @@
 <template>
-	<div class="mt-[50vh] snap-end snap-always">
-		<div>
-			<TranslatorIntroductionShowcaseHomepage />
-			<TranslatorIntroductionShowcaseOverview />
-			<TranslatorIntroduction />
-			<TranslatorIntroductionShowcasePoster />
-		</div>
+	<div class="w-[70vw] m-auto mt-[25vh] text-5xl pl-[2vw] snap-start snap-always">Showcase</div>
+	<div>
+		<TranslatorIntroductionShowcaseHomepage />
+		<TranslatorIntroductionShowcaseOverview />
+		<TranslatorIntroduction />
+		<TranslatorIntroductionShowcasePoster />
 	</div>
 </template>
 

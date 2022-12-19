@@ -1,5 +1,5 @@
 <template>
-	<div class="my-[20vh] showcase-basic">
+	<div class="mb-[20vh] mt-[10vh] showcase-basic">
 		<div class="mb-[10vh] flex-con-end place-items-end mx-[5vw]">
 			<div class="text-6xl gradient-text flex-con-end place-items-end">
 				<div>Check and</div>
