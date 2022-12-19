@@ -7,7 +7,7 @@
 			@mouseleave="hoverOnButton = !hoverOnButton"
 		>
 			<a
-				href="https://github.com/dongdong867/NCCU_Job_Bank"
+				href="https://www.opennccu.com/"
 				target="_blank"
 				class="flex place-items-baseline gap-x-[1vw]"
 			>

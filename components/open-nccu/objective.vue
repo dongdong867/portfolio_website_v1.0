@@ -1,7 +1,7 @@
 <template>
 	<div class="mt-[50vh] snap-center snap-always">
 		<div class="w-max m-auto">TIME LINE</div>
-		<div class="m-auto text-[80px] gradient-text">50 hours</div>
+		<div class="m-auto text-[80px] gradient-text">2 months</div>
 		<div class="w-max m-auto mt-[2vh]">BUILD WITH</div>
 		<div class="text-[80px] flex place-content-evenly">
 			<div class="gradient-text">Nuxt3.js</div>
@@ -13,10 +13,11 @@
 		</div>
 		<div class="work-border-l mt-[10vh]">
 			<div class="text-5xl">Objective</div>
-			<div class="mt-[5vh]">
+			<div class="mt-[5vh] font-semibold">
 				Our team will build a PWA based on Nuxt3.js, TailwindCSS, TypeScript and Firebase, offering
-				syudents in NCCU an application with renovated visual design and functions that meet the
-				needs. We plan to launch the application brfore December 23th and test in early December.
+				students in NCCU a web application with renovated visual design and functions that meet the
+				needs in daily life. We planed to launch the application brfore December 23th and test in
+				early December.
 			</div>
 		</div>
 	</div>

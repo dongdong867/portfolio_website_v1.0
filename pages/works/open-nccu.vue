@@ -7,7 +7,7 @@
 				<div class="w-[70vw] m-auto">
 					<OpenNccuBackground />
 					<OpenNccuObjective />
-					<OpenNccuProblems />
+					<OpenNccuProblems class="w-[65vw]" />
 				</div>
 				<OpenNccuShowcase />
 			</div>

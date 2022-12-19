@@ -2,10 +2,10 @@
 	<div class="mt-[20vh] snap-center snap-always">
 		<div class="work-border-l mb-[8vh]">
 			<div class="text-5xl font-extrabold">Background</div>
-			<div class="mt-[5vh]">
-				As a member of gen Z, Open NCCU team gathers a group of students in NCCU, attempt to
-				renovate and rebuild the user unfriendly systems in our school. Our goal is to offer a user
-				friendly system that really meets the need of NCCU students.
+			<div class="mt-[5vh] font-semibold">
+				Open NCCU is a team gathered a group of students from NCCU, attempt to renovate and rebuild
+				the user unfriendly digital systems in our school. Our goal is to offer user friendly
+				systems and duguta kits that really meets the need of students in NCCU.
 			</div>
 		</div>
 		<div class="flex place-content-end">
