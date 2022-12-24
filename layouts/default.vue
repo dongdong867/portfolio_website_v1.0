@@ -1,6 +1,6 @@
 <template>
 	<div class="w-screen h-[8vh] bg-base sticky top-0 flex place-items-center z-10">
-		<NavigationBar />
+		<Navigationbar />
 	</div>
 
 	<div
