@@ -10,7 +10,7 @@ export default {
 		extend: {
 			colors: {
 				base: '#171717',
-				'base-100': '#303030',
+				'base-100': '#2d2d2d',
 				'base-content': '#f5f5f5'
 			}
 		}

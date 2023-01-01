@@ -5,8 +5,10 @@
 	body,
 	#__nuxt {
 		width: 100%;
-		height: 100%;
+		height: max-content;
 		margin: 0;
+		scroll-behavior: smooth;
+		scrollbar-width: none;
 	}
 
 	:root {
@@ -15,29 +17,114 @@
 }
 
 @tailwind components;
-
 @tailwind utilities;
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('~/assets/fonts/Montserrat/Montserrat-Medium');
+	src: url('~/assets/fonts/Montserrat/Montserrat-Medium.ttf');
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('~/assets/fonts/Montserrat-SemiBold');
+	src: url('~/assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('~/assets/fonts/Montserrat/Montserrat-Bold');
+	src: url('~/assets/fonts/Montserrat/Montserrat-Bold.ttf');
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('~/assets/fonts/Montserrat/Montserrat-ExtraBold');
+	src: url('~/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf');
 	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('~/assets/fonts/Montserrat/Montserrat-Black.ttf');
+	font-weight: 900;
+}
+
+@layer utilities {
+	.gradient-background {
+		background-image: linear-gradient(90.73deg, #2af598 0%, #009efd 100%);
+	}
+
+	.gradient-text {
+		background-image: linear-gradient(90.73deg, #2af598 0%, #009efd 100%);
+		@apply w-max text-transparent bg-clip-text leading-tight;
+	}
+
+	.cursor-setting {
+		@apply select-none cursor-default;
+	}
+
+	.work-background {
+		@apply bg-scroll bg-no-repeat bg-[length:100vw_auto];
+	}
+
+	.work-snap {
+		@apply overflow-y-auto overflow-x-hidden snap-y snap-mandatory;
+	}
+
+	.work-border-l {
+		@apply border-l-8 pl-[2vw];
+	}
+
+	.showcase-basic {
+		@apply w-screen flex snap-center snap-always;
+	}
+
+	.flex-con-end {
+		place-content: flex-end;
+		@apply flex flex-col;
+	}
+
+	@keyframes link-hover-bounce {
+		0%,
+		100% {
+			transform: translateX(-25%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: translateX(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
+
+	@keyframes line-to-left-in-work {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 91%;
+		}
+	}
+}
+
+@layer components {
+	.work-index-basic {
+		place-items: flex-end;
+		@apply w-[90vw] h-[77vh] m-auto flex bg-no-repeat bg-center bg-cover rounded-[30px] cursor-default;
+	}
+
+	.work-index-label {
+		@apply w-max p-[2vw] rounded-bl-[30px] rounded-tr-[30px] font-bold text-2xl bg-base-100;
+	}
+
+	.work-basic {
+		@apply w-screen h-[87vh] cursor-setting work-background work-snap scroll-py-[5vh];
+	}
+
+	.work-title {
+		@apply w-[80vw] m-auto mt-[50vh] text-3xl snap-end snap-always drop-shadow-[-3px_0_5px_rgba(50,50,50,0.7)];
+	}
+
+	.work-button {
+		@apply w-max mt-[3vh] p-5 border-[3px] rounded-[50px] cursor-none hover:gradient-background hover:drop-shadow-[0_0_5px_rgba(200,200,200,0.4)];
+	}
 }
