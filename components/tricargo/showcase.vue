@@ -1,9 +1,20 @@
 <template>
-	<div class="mt-[50vh] snap-end snap-always">
-		<div class="w-max m-auto my-[5vh] text-5xl">showcase building</div>
+	<div class="w-[70vw] m-auto mt-[25vh] text-5xl pl-[2vw] snap-start snap-always">Showcase</div>
+	<div>
+		<TricargoShowcaseHomepage />
+		<TricargoShowcaseReserve />
+		<TricargoShowcaseError />
+		<TricargoShowcasePaying />
+		<TricargoShowcaseHistory />
+		<TricargoShowcaseAccount />
+		<TricargoShowcaseWallet />
 	</div>
 </template>
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style>
+.img-size {
+	@apply h-[75vh] m-auto;
+}
+</style>
