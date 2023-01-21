@@ -1,5 +1,5 @@
 <template>
-	<div class="work-basic" :style="{ 'background-image': 'url(' + Title + ')' }">
+	<div class="work-basic" :style="{ 'background-image': 'url(' + main + ')' }">
 		<div class="w-screen flex flex-col text-2xl font-bold">
 			<LetsBeatGoogleTitle />
 			<div class="mt-[22vh] bg-base">
@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import Title from '~/assets/images/lets-beat-google/title.png?url'
+import main from '~/assets/images/lets-beat-google/main.png?url'
 
 definePageMeta({
 	layout: 'work'

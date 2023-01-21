@@ -8,7 +8,7 @@
 			<a href="https://github.com/dongdong867" target="_blank">
 				<img :src="GithubIcon" />
 			</a>
-			<div>Copyright © 2022 DONG</div>
+			<div>Copyright © 2023 DONG</div>
 		</div>
 	</div>
 </template>

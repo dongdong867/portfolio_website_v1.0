@@ -8,7 +8,7 @@
 		<div class="bg-[#bababa] rounded-[30px]">
 			<div
 				class="bg-contain work-index-basic bg-right"
-				:style="{ 'background-image': 'url(' + main + ')' }"
+				:style="{ 'background-image': 'url(' + title + ')' }"
 			>
 				<div class="work-index-label">
 					<div class="text-5xl gradient-text">Let's Beat Google</div>
@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import main from '~/assets/images/lets-beat-google/showcase/main.png?url'
+import title from '~/assets/images/lets-beat-google/title.png?url'
 
 const isHovering = ref(false)
 </script>
