@@ -1,14 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { NuxtConfig } from 'nuxt/config'
 import svgloader from 'vite-svg-loader'
 
 export default defineNuxtConfig({
 	modules: [
-		[
-			'@pinia/nuxt',
-			{
-				autoImports: ['defineStore']
-			}
-		],
+		['@pinia/nuxt', { autoImports: ['defineStore'] }],
 		['@nuxtjs/tailwindcss']
 	],
 
@@ -28,4 +24,4 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: 'firebase'
 	}
-})
+} as NuxtConfig)
